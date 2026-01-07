@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREER COMPTE</title>
+    <style>
+    section{
+        width: 50%;
+        border: 1,solid;
+        margin left: 25%;
+        border-radius: 4px;
+    }
+    h4{
+        text-align: center;
+        padding: 10px;
+        background-color: lightgray;
+    }
+    #infos{
+        padding: 0px;
+        color: rgb(228, 13, 13);
+        margin: 5px;
+        border-radius: 5px;
+    }
+    form{
+        padding: 0%;
+    }
+input{
+    width: 42%;
+    margin: 6px;
+    padding: 1px;
+}
+.btn{
+    margin: 5px;
+}
+button{
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+.btn button{
+    background-color: rgb(102, 186, 246);
+    border-color: rgb(110, 190, 247);
+}
+.vl{
+    background-color: rgb(99, 173, 99);
+    border-color: rgb(100, 171, 100);
+}
+.ann{
+    background-color: rgb(224, 62, 62);
+    border-color: rgb(201, 65, 65);
+}
+.one{
+    background-color: white;
+    color: gray;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.two{
+    background-color: rgba(211, 211, 211, 0.29);
+    color: gray;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.one label{
+    width: 375px;
+}
+.two label{
+    width: 400px;
+}
+.one input,
+.one select{
+    width: 250px;
+}
+.button{
+    text-align: center;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+}
+.rd fieldset{
+    border: 1,solid,white;
+    border-radius: 2px;
+    padding: 20px;
+    margin: 0%;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <section class="form">
+        <fieldset class="rd">
+        <h4>Création de votre compte d'accés</h4>
+        <div id="infos">
+        <ul>
+            <li><b>Tous les champs sont obligatoires</b></li>
+            <li><b>Le mot de passe doit contenir 8 caractères minimum avec un mélange de chiffres et de lettres.</b></li>
+        </ul>
+        </div>
+        <form>
+            <fieldset>
+            <div class="one">
+                <label for="">Type d'identifiant :</label>
+                <select>
+                    <option >sélectionnez le type d'identifiant</option>
+                    <option>Numéro Carte d'étudiant</option>
+                    <option>Numéro Table</option>
+                    <option>CIN/Passeport</option>
+                    <option>INE</option>
+                </select>
+            </div>
+            <div class="two">
+                <label for="">Votre Identifiant :</label>
+                <input type="text" name="nom" placeholder="Votre Identifiant">
+            </div>
+            <div class="one">
+                <label for="name">Nom :</label>
+                <input type="text" name="nom" placeholder="Nom de famille">
+            </div>
+            <div class="two">
+                <label for="Prénom">Prénoms :</label>
+                <input type="text" name="nom" placeholder="Prénoms">
+            </div>
+            <div class="one">
+                <label for="password">Mot de passe :</label>
+                <input type="password" placeholder="Créer un mot de passe pour la connexion à">
+            </div>
+            <div class="two">
+                <label for="password">Confirmation du mot de passe :</label>
+                <input type="password" placeholder="confirmer votre mot de passe">
+            </div>
+            <div class="one">
+                <label for="email">E-mail Personnel :</label>
+                <input type="email" name="email" placeholder="E-mail personnel">
+            </div>
+            <div class="two">
+                <label for="">Captcha :</label>
+                <input type="text" name="nom" placeholder="Saisissez les caractères ci-dessous">
+            </div>
+            <div class="btn">
+            <button>Règènérer</button>
+            </div>
+            </fieldset>
+
+        </form>
+        <div class="button">
+            <button class="vl">Valider</button>
+            <button class="ann">Annuler</button>
+        </div>
+        </fieldset>
+    </section>
+</body>
+</html>
